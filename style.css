@@ -1,56 +1,76 @@
-body {
+@font-face {
+	font-family: "Helveticamazing";
+	src: url(Font/Helveticamazing.ttf);
+}
+@font-face {
+	font-family: "Inlanders Demo";
+	src: url(Font/Inlanders\ Demo.otf)
+}
+.body{
+    
     background: linear-gradient(rgba(0, 255, 157, 0.925), rgb(65, 97, 86));
-}
-
-.titre {
-    font-family: "Helveticamazing";
-    color: rgb(26, 25, 25);
-    font-size: 55px;
-    margin-left: 50px;
-
-}
-
-.titre2 {
-    font-family: "Helveticamazing";
-    color: rgb(26, 25, 25);
-    font-size: 25px;
-    margin-left: 50px;
-}
-
-.PhotoVi {
-    height: 572px;
+    background-repeat: no-repeat;
 }
 
 .competences {
-    padding-top: 80px;
-    line-height: 0px;
-    color: #000000;
-    font-family: "Inlanders Demo";
-    font-size: 70px;
-    text-align: end; 
-    transition: rotate 0.2s;
-}
+	padding-top: 90px;
+	line-height: 0px;
+	color: #000000;
+	font-family: "Inlanders Demo";
+	font-size: 60px;
 
-.competences:hover{
-    color: white;
-    font-size: 95px;
-    rotate: 1 -0.5 1 -10deg;
-    text-shadow: 5px 5px #00ffb3;
-    cursor: pointer;
+	transition: rotate 0.2s;
 }
-
+.competences:hover {
+	color: white;
+	font-size: 75px;
+	transform: rotate(-2deg);
+	text-shadow: 10px 10px #00ffb3;
+	cursor: pointer;
+}
 footer {
-    text-align: center;
-    background-color: white;
+	background-color: white;
+	position: absolute;
+	bottom: 0;
+
+}
+.demo-texte-js {
+	
+	position: relative;
+	min-height: 100px;
+	font-family: "Helveticamazing";
+	color: rgb(26, 25, 25);
+	font-size: 4em;
+	margin-left: 0px;
+    overflow: hidden;
+}
+.demo-texte-js span {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	font-family: "Helveticamazing";
+	color: rgb(26, 25, 25);
+}
+@media screen and (max-width:992px) {
+	.competences {
+		padding-top: 90px;
+		line-height: 0px;
+		color: #000000;
+		font-family: "Inlanders Demo";
+		font-size: 50px;
+		text-align: end;
+		transition: rotate 0.2s;
+	}
+	.competences:hover {
+		color: white;
+		font-size: 60px;
+		transform: rotate(-2deg);
+		text-shadow: 10px 10px #00ffb3;
+		cursor: pointer;
+	}
+	
 }
 
-
-    @font-face {
-        font-family: "Helveticamazing";
-        src: url(Font/Helveticamazing.ttf);
-        }
-    @font-face {
-        font-family: "Inlanders Demo";
-        src: url(Font/Inlanders\ Demo.otf)
-    }
-  
