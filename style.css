@@ -28,9 +28,10 @@
 	text-shadow: 10px 10px #00ffb3;
 	cursor: pointer;
 }
-footer {
-	background-color: white;
 
+.footer>a{
+	color:#fff;
+	margin-right: 10px;
 }
 .demo-texte-js {
 	
@@ -52,6 +53,7 @@ footer {
 	font-family: "Helveticamazing";
 	color: rgb(26, 25, 25);
 }
+
 @media screen and (max-width:992px) {
 	.competences {
 		padding-top: 90px;
