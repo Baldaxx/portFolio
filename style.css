@@ -13,7 +13,6 @@
 
 .competences {
 	padding-top: 90px;
-
 	line-height: 0px;
 	color: #363636;
 	font-family: "Inlanders Demo";
@@ -21,6 +20,7 @@
 	transition: rotate 0.2s;
 }
 .competences:hover {
+	font-size: 55px;
 	color: white;
 	text-shadow: 3px 3px #00ffb3;
 	cursor: pointer;
@@ -29,6 +29,7 @@
 }
 
 .statique {
+	font-size: 55px;
 	color : white;
 	text-shadow: 6px 6px #00ffb3;
 	cursor: pointer;
@@ -71,7 +72,7 @@ padding-top: 20px;
 }
 
 .mac span {
-	color: #13FEA4;
+	color: #3C715E;
 	position: relative;
 }
 
@@ -82,13 +83,13 @@ padding-top: 20px;
 	position: absolute;
 	height: 30px;
 	width: 2px;
-	background: #13FEA4;
+	background: #3C715E;
 	transform: translateY(-45%);
 	animation: blink 0.7s infinite;
 }
 
 .card {
-    background-color: rgba(255, 255, 255, 0.7)!important;
+    background-color: rgba(255, 255, 255, 0.6)!important;
 	border-radius: 5%!important;
 }
 
