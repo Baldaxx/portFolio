@@ -18,15 +18,22 @@
 	color: #000000;
 	font-family: "Inlanders Demo";
 	font-size: 60px;
-
 	transition: rotate 0.2s;
 }
 .competences:hover {
 	color: white;
 	font-size: 75px;
-	transform: rotate(-2deg);
-	text-shadow: 10px 10px #00ffb3;
+font-size: 80px;
+	text-shadow: 3px 3px #00ffb3;
 	cursor: pointer;
+}
+
+.fondBlanc {
+	background : white;
+	padding : 20px;
+	border-radius : 20px;
+	opacity : 50%;
+	box-shadow: 10px 5px 5px black;
 }
 
 .footer>a{
