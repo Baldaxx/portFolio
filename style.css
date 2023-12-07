@@ -7,38 +7,39 @@
 	src: url(Font/Inlanders\ Demo.otf)
 }
 .body{
-    
     background: linear-gradient(rgba(0, 255, 157, 0.925), rgb(65, 97, 86));
     background-repeat: no-repeat;
 }
 
 .competences {
 	padding-top: 90px;
+
 	line-height: 0px;
-	color: #000000;
+	color: #363636;
 	font-family: "Inlanders Demo";
-	font-size: 60px;
+	font-size: 55px;
 	transition: rotate 0.2s;
 }
 .competences:hover {
 	color: white;
-	font-size: 75px;
-font-size: 80px;
 	text-shadow: 3px 3px #00ffb3;
 	cursor: pointer;
+	transform: rotateY(-25deg) rotateX(10deg);
+    transition: all 0.5s ease;
 }
 
-.fondBlanc {
-	background : white;
-	padding : 20px;
-	border-radius : 20px;
-	opacity : 50%;
-	box-shadow: 10px 5px 5px black;
+.statique {
+	color : white;
+	text-shadow: 6px 6px #00ffb3;
+	cursor: pointer;
+	transform: rotateY(-35deg) rotateX(20deg);
+    transition: all 0.5s ease;
 }
 
 .footer>a{
 	color:#fff;
 	margin-right: 10px;
+	text-decoration: none;
 }
 .demo-texte-js {
 	
@@ -61,6 +62,54 @@ font-size: 80px;
 	color: rgb(26, 25, 25);
 }
 
+.mac {
+font-family: monospace;
+font-family: "Inlanders Demo";
+font-size: 50px;
+margin-left: 20px;
+padding-top: 20px;
+}
+
+.mac span {
+	color: #13FEA4;
+	position: relative;
+}
+
+.mac span::before {
+	content: "";
+	right: -8px;
+	top: 50%;
+	position: absolute;
+	height: 30px;
+	width: 2px;
+	background: #13FEA4;
+	transform: translateY(-45%);
+	animation: blink 0.7s infinite;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.7)!important;
+	border-radius: 5%!important;
+}
+
+.mac span.stop-blinking::before {
+animation: none;
+}
+
+@keyframes blink {
+	50% {
+		opacity: 0;
+	}
+}
+
+.card-text {
+	padding: 30px;
+}
+
+.msg {
+	text-align: center;
+	font-size: 200px;
+}
 @media screen and (max-width:992px) {
 	.competences {
 		padding-top: 90px;
@@ -80,4 +129,3 @@ font-size: 80px;
 	}
 	
 }
-
