@@ -1,5 +1,5 @@
 const dynamicText = document.querySelector(".mac span");
-const words = ["developpeuse", "commerciale", "autodidacte", "challengeuse", "dynamique", "corporate", "Persévérante", "autonome", "equipe"];
+const words = ["developpeuse", "creative","commerciale", "autodidacte", "challengeuse", "dynamique", "corporate", "persévérante", "autonome", "equipe", "souriante", "ponctuelle"];
 
 let wordndex = 0;
 let chardndex = 0;
@@ -13,15 +13,15 @@ const typeEffect = () => {
 
   if (!isDeleting && chardndex < currentWord.length) {
     chardndex++;
-    setTimeout(typeEffect, 200);
+    setTimeout(typeEffect, 50);
   } else if (isDeleting && chardndex > 0) {
     chardndex--;
-    setTimeout(typeEffect, 100);
+    setTimeout(typeEffect, 50);
   } else {
     isDeleting = !isDeleting;
     dynamicText.classList.remove("stop-blinking");
     wordndex = !isDeleting ? (wordndex + 1) % words.length : wordndex;
-    setTimeout(typeEffect, 2000);
+    setTimeout(typeEffect, 1000);
   }
 };
 
@@ -91,15 +91,15 @@ anime.timeline({
 	delay: 500
 });
 
+
 document.querySelectorAll('.nav-link').forEach(function(button) {
 	button.addEventListener('click', function() {
 	  document.querySelectorAll('.nav-link').forEach(function(btn) {
 		btn.classList.remove('active');
 		btn.classList.remove('statique');
 	  });
-  
 	  button.classList.add('active');
 	  button.classList.add('statique');
 	});
 });
-  
+

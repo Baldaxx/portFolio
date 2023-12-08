@@ -16,13 +16,13 @@
 	line-height: 0px;
 	color: #363636;
 	font-family: "Inlanders Demo";
-	font-size: 55px;
+	font-size: 50px;
 	transition: rotate 0.2s;
 }
 .competences:hover {
-	font-size: 55px;
+	font-size: 50px;
 	color: white;
-	text-shadow: 3px 3px #00ffb3;
+	text-shadow: 4px 4px #00ffb3;
 	cursor: pointer;
 	transform: rotateY(-25deg) rotateX(10deg);
     transition: all 0.5s ease;
@@ -111,22 +111,14 @@ animation: none;
 	text-align: center;
 	font-size: 200px;
 }
-@media screen and (max-width:992px) {
+
+@media screen and (max-width:768px) {
 	.competences {
-		padding-top: 90px;
-		line-height: 0px;
-		color: #000000;
-		font-family: "Inlanders Demo";
-		font-size: 50px;
-		text-align: end;
-		transition: rotate 0.2s;
+		font-size: 30px;
+		display: none;
 	}
-	.competences:hover {
-		color: white;
-		font-size: 60px;
-		transform: rotate(-2deg);
-		text-shadow: 10px 10px #00ffb3;
-		cursor: pointer;
+
+	.phrase1, .phrase2, .phrase3, .phrase4 {
+		font-size: 30px;
 	}
-	
 }
