@@ -12,7 +12,7 @@
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 
 <body>
@@ -109,11 +109,19 @@
 										<a href="tel:+33612543375" class="btn text-white-50 bg-dark">Me telephoner </a>
 										<a href="mailto:virginie.bm13@icloud.com" class="btn text-white-50 bg-dark">
 											M'envoyer un mail </a>
-										<a href="https://wa.me/612543375" class="btn text-white-50 bg-dark"> M'envoyer
-											un message </a>
-
+										<a href="https://wa.me/612543375" class="btn text-white-50 bg-dark"> Whats'app </a> <hr>
+											<form class="form-contact">
+												<p class="titleh5">Laissez moi vos coordonnées</p> <br>
+													<input id="fname" type="text"placeholder="Nom">
+													<input id="lname" type="text"placeholder="Prénom...">
+													<input id="email" type="email"placeholder="Email...">
+													<input id="phone" type="text"placeholder="Numéro..."> <br>
+													<textarea id="message" type="text"placeholder="Message..."></textarea><br>
+													<input id="submit" type="submit">
+											</form>
 									</div>
 								</div>
+								
 							</div>
 						</div>
 					</div>
@@ -144,12 +152,117 @@
 						</div>
 					</div>
 					<div class="col-lg-3 col-12">
-						<div><img class="image-fluid" src="https://i.ibb.co/z77P7Mh/OIMii.png" alt="oim"></div>
+						<div><img class="image-fluid" src="https://i.ibb.co/z77P7Mh/OIMii.png" alt="Photo de Virginie Baldacchino"></div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<footer class="col-12 text-center">
+		<div class="accordion" id="accordionExample">
+			<div>
+			  <h2 class="accordion-header"  id="headingOne">
+				<button class="accordion-button" style="background-color: rgba(255, 255, 255, 0.1);" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					<p class="titreResponsive">"Infos_User" =></p>
+				</button>
+			  </h2>
+			  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+				<div class="accordion-body">
+					<p class="msg"> &#x1F576</p>
+				  <strong>Les études m'ont offert le
+					plaisir d'explorer l'art de la mise en valeur et les moyens de transmettre
+					des messages,
+					mais mon amour pour le challenge m'a attirée dans le metier de
+					commercial.<br> J'ai appris
+					l'art de la persuasion, la force de vente, la resilience et j'ai excellé
+					dans ce domaine. <br>C'était un terrain de jeux où je me suis
+					révélée.<br><br>
+					Aujourd'hui, en tant que développeuse, je marie habilement
+					créativité et technicité pour redéfinir mon destin professionnel. <br>Mon
+					histoire est une saga d'adaptabilité, d'analyse approfondie et de
+					persévérance. <br>Forte de cette diversité de compétences, je suis prête à
+					conquérir un nouveau chapitre, prête à écrire de nouvelles règles avec une
+					audace totalement assumée. 💼💻✨
+				</div>
+			  </div>
+			</div>
+			<div>
+				<h2 class="accordion-header"  id="headingOne">
+					<button class="accordion-button" style="background-color: rgba(255, 255, 255, 0.1);" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+						<p class="titreResponsive">"Competences en beta</p>
+				</button>
+			  </h2>
+			  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+				<div class="accordion-body">
+					<p class="card-text">
+						<p class="mac">Je suis <span></span></p>
+						Souriante et empathique, ma personnalité s'accompagne d'une grande capacité
+						d'adaptation, m'offrant la flexibilité nécessaire pour relever divers
+						défis.<br> Mon état d'esprit optimiste et challengeur guide mon approche
+						professionnelle au quotidien, me poussant à me remettre en question
+						constamment pour atteindre l'excellence. <br>Travailler en équipe est une
+						seconde nature pour moi, où je m'efforce d'insuffler cette énergie positive
+						et collaborative. Ma veille concurrentielle et technique permanente démontre
+						mon engagement à rester à la pointe des tendances et des innovations.
+						<br><br>
+						En plus de mes compétences techniques, je possède une expertise dans la mise
+						en valeur de produits, que ce soit en personne, sur le web, réseaux sociaux
+						ou lors d'événements. <br>Mon expérience en tant que commerciale cuisiniste
+						m'a permis de développer des compétences de persuasion, de négociation, et
+						d'annonce de prix, renforçant ainsi ma capacité à valoriser un produit de
+						manière efficace.
+					</p>
+					<a href="Img/cvBaldacchinoVirginie.pdf" class="btn text-white-50 bg-dark"
+						target="_blank">Telecharger mon CV</a>
+				</div>
+			  </div>
+			</div>
+			<div>
+				<h2 class="accordion-header"  id="headingOne">
+					<button class="accordion-button" style="background-color: rgba(255, 255, 255, 0.1);" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+						<p class="titreResponsive">"Projet.git</p>
+			  </h2>
+			  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+				<div class="accordion-body">
+					<p class="msg"> &#x1F5A5</p>
+					<p>Voici un aperçu de ces accomplissements partagés au cours
+						de 2023-2024 en HTML5, CSS et Javascript.</p>
+					<a href="#" class="btn text-white-50 bg-dark">Projet Virée sauvage</a> <a
+						href="#" class="btn text-white-50 bg-dark">Projet StarWars</a>
+					<a href="#" class="btn text-white-50 bg-dark">Projet Superman</a>
+				</div>
+			  </div>
+			</div>
+			<div>
+				<h2 class="accordion-header"  id="headingOne">
+					<button class="accordion-button" style="background-color: rgba(255, 255, 255, 0.1);" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+						<p class="titreResponsive">"Contact.send();</p>
+				</h2>
+				<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+				  <div class="accordion-body">
+					<p class="msg"> &#x1F4AC;</p>
+					Tel. <strong>06 12 54 33 75</strong> <br>Email.
+					<strong>virginie.bm13@icloud.com</strong> <br>Localité. <strong>13360
+						Roquevaire</strong></p>
+				<a href="tel:+33612543375" class="btn text-white-50 bg-dark">Me telephoner </a>
+				<a href="mailto:virginie.bm13@icloud.com" class="btn text-white-50 bg-dark">
+					M'envoyer un mail </a>
+				<a href="https://wa.me/612543375" class="btn text-white-50 bg-dark"> M'envoyer
+					un message </a>
+					<form class="form-contact">
+						<p class="titleh5">Laissez moi vos coordonnées</p> <br>
+							<input id="fname" type="text"placeholder="Nom">
+							<input id="lname" type="text"placeholder="Prénom...">
+							<input id="email" type="email"placeholder="Email...">
+							<input id="phone" type="text"placeholder="Numéro..."> <br>
+							<textarea id="message" type="text"placeholder="Message..."></textarea><br>
+							<input id="submit" type="submit">
+					</form>
+				  </div>
+				</div>
+			  </div>
+		  </div>
+
+		  <div><img class="image-fluid2" src="https://i.ibb.co/z77P7Mh/OIMii.png" alt="Photo de Virginie Baldacchino"></div>
+		  <footer class="col-12 text-center">
 			<p class="m-auto py-3 footer">
 				<a href="https://github.com/Baldaxx" target="_blank"><i class="fa-brands fa-github fa-3x"></i></a>
 				<a href="https://www.linkedin.com/in/baldax/" target="_blank"><i

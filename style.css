@@ -97,6 +97,36 @@ padding-top: 20px;
 animation: none;
 }
 
+input {
+border-radius: 5px;
+box-shadow: 0.1px 1px 5px#363636;
+border: none;
+}
+
+#submit {
+	border-radius: 5px;
+	margin-top: 10px;
+}
+
+.titleh5 {
+	font-size: 20px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#phone {
+	margin-top: 10px;
+}
+#message {
+margin-top: 10px;
+	width: 540px;
+	height: 100px;
+	border-radius: 5px;
+box-shadow: 0.1px 1px 5px#363636;
+border: none;
+}
+
+
+
 @keyframes blink {
 	50% {
 		opacity: 0;
@@ -112,13 +142,88 @@ animation: none;
 	font-size: 200px;
 }
 
-@media screen and (max-width:768px) {
+.accordion, .image-fluid2 {
+	display: none;
+}
+
+
+
+@media screen and (max-width:1110px) {
 	.competences {
 		font-size: 30px;
 		display: none;
 	}
 
+	.tab-content, .image-fluid {
+		display: none;
+	}
+
+	.accordion, .image-fluid2 {
+		display: block ;
+	}
+
+	.accordion {
+		padding-bottom: 5%;
+	}
+
+	.btn {
+		margin: 1%;
+	}
+
 	.phrase1, .phrase2, .phrase3, .phrase4 {
 		font-size: 30px;
 	}
+	input {
+		border-radius: 5px;
+		box-shadow: 0.1px 1px 5px#363636;
+		border: none;
+		width: 360px;
+		margin-top: 10px;
+		}
+
+		
+		#submit {
+			border-radius: 5px;
+			margin-top: 10px;
+		}
+		
+		.titleh5 {
+			font-size: 20px;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		}
+		
+		#phone {
+			margin-top: 10px;
+		}
+		#message {
+		margin-top: 10px;
+			width: 360px;
+			height: 50px;
+			border-radius: 5px;
+		box-shadow: 0.1px 1px 5px#363636;
+		border: none;
+		}
+}
+.titreResponsive {
+	color: #363636;
+	font-family: "Inlanders Demo";
+	font-size: 30px;
+	margin: 2px;
+}
+
+@media screen and (max-width:1200px) {
+
+.competences {
+	font-size: 30px;
+}
+.competences:hover {
+	font-size: 30px;
+}
+.btn {
+	margin: 1%;
+}
+
+.mac {
+	font-size: 30px;
+}
 }

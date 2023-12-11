@@ -103,3 +103,35 @@ document.querySelectorAll('.nav-link').forEach(function(button) {
 	});
 });
 
+const fname =document.getElementById('fname');
+const lname =document.getElementById('lname');
+const email =document.getElementById('email');
+const phone =document.getElementById('phone');
+const message =document.getElementById('message');
+const submit =document.getElementsByClassName('form-contact')[0];
+
+submit.addEventListener('submit',(e)=>{
+	e.preventDefault();
+	console.log("clicked");
+
+let ebody = `
+<b>Name: </b>${fname.value}&nbsp;${lname.value}
+<br>
+<b>Email: </b>${email.value}
+<br>
+<b>Phone: </b>${phone.value}
+<br>
+<b>Message: </b>${message.value}
+`
+
+	Email.send({
+		SecureToken : "5f4c8539-03e2-433a-906f-f771157650ed",
+		To : 'virginie.bm13@icloud.com',
+		From : "virginie.bm13@icloud.com",
+		Subject : "Vous avez recu un email de "+ email.value,
+		Body : ebody
+	}).then(
+	  message => alert(message)
+	);
+})
+
