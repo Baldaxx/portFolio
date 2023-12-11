@@ -125,8 +125,6 @@ box-shadow: 0.1px 1px 5px#363636;
 border: none;
 }
 
-
-
 @keyframes blink {
 	50% {
 		opacity: 0;
@@ -148,7 +146,7 @@ border: none;
 
 
 
-@media screen and (max-width:1110px) {
+@media screen and (max-width:767px) {
 	.competences {
 		font-size: 30px;
 		display: none;
@@ -211,7 +209,7 @@ border: none;
 	margin: 2px;
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (min-width:768px) and (max-width:1023px) {
 
 .competences {
 	font-size: 30px;
@@ -226,4 +224,64 @@ border: none;
 .mac {
 	font-size: 30px;
 }
+.competences {
+	font-size: 30px;
+	display: none;
+}
+
+.tab-content, .image-fluid {
+	display: none;
+}
+
+.accordion, .image-fluid2 {
+	display: block ;
+}
+
+.accordion {
+	padding-bottom: 5%;
+}
+
+.btn {
+	margin: 1%;
+}
+
+.phrase1, .phrase2, .phrase3, .phrase4 {
+	font-size: 30px;
+}
+input {
+	border-radius: 5px;
+	box-shadow: 0.1px 1px 5px#363636;
+	border: none;
+	width: 80px;
+	margin-top: 10px;
+	}
+
+	
+	#submit {
+		border-radius: 5px;
+		margin-top: 10px;
+	}
+	
+	.titleh5 {
+		font-size: 20px;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	}
+	
+	#phone {
+		margin-top: 10px;
+	}
+	#message {
+	margin-top: 10px;
+		width: 325px;
+		height: 50px;
+		border-radius: 5px;
+	box-shadow: 0.1px 1px 5px#363636;
+	border: none;
+	}
+}
+.titreResponsive {
+color: #363636;
+font-family: "Inlanders Demo";
+font-size: 30px;
+margin: 2px;
 }
