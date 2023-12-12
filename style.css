@@ -225,11 +225,23 @@ section {
 
 .butt {
     padding: 10px;
-    width: 70px;
+    width: 90px;
     cursor: pointer;
     background-color: #7B8697;
     color: black;
     font-family: "Inlanders Demo";
+	display: inline-block; 
+    border: 5px solid #1C2F4D; 
+	text-decoration: none;
+	box-shadow: 3px 3px 5px #1C2F4D;
+}
+
+.butt:hover {
+    color: black;
+}
+
+#foot1, #foot2, #foot3 {
+	color: white;
 }
 
 @media screen and (max-width:767px) {

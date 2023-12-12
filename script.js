@@ -135,24 +135,30 @@ let ebody = `
 	);
 })
 
+document.querySelector('.butt').addEventListener('click', function(event) {
+    event.preventDefault(); // Empêche le comportement par défaut du lien
+    startGame(); // Appel à la fonction startGame() pour réinitialiser le jeu
+    return false;
+});
+
 var perso = document.querySelector(".perso");
 var obstacles = document.querySelector(".obstacles");
 
-function sauter(){
-   if(perso.classList != "animation"){
-    perso.classList.add('animation');
-   }
-   setTimeout(function(){
-    perso.classList.remove('animation');
-   },500)
+function sauter() {
+    if (perso.classList != "animation") {
+        perso.classList.add('animation');
+    }
+    setTimeout(function() {
+        perso.classList.remove('animation');
+    }, 500)
 }
 
-var verification = setInterval(function(){
-    var persoTop = parseInt(window.getComputedStyle(perso).getPropertyValue("top")) ;
-    var obstaclesLeft = parseInt(window.getComputedStyle(obstacles).getPropertyValue("left")) ;
+var verification = setInterval(function() {
+    var persoTop = parseInt(window.getComputedStyle(perso).getPropertyValue("top"));
+    var obstaclesLeft = parseInt(window.getComputedStyle(obstacles).getPropertyValue("left"));
 
-    if(obstaclesLeft<20 && obstaclesLeft> 0 && persoTop>= 90){
+    if (obstaclesLeft < 20 && obstaclesLeft > 0 && persoTop >= 90) {
         obstacles.style.animation = "none";
         alert("Vous êtes mort...!")
     }
-},1)
+}, 1);
