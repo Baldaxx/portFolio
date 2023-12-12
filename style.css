@@ -166,10 +166,10 @@ section {
 }
 
 .perso {
-    width: 30px;
-    height: 70px;
+    width: 60px;
+    height: 140px;
     position: relative;
-    top: 230px;
+    top: 160px;
 }
 
 .animation {
@@ -178,16 +178,16 @@ section {
 
 @keyframes perso-saut{
 0% {
-    top: 190px;
+    top: 90px;
 }
 25% {
-    top: 140px;
+    top: 40px;
 }
 50% {
-    top: 140px;
+    top: 40px;
 }
 100% {
-    top: 190px;
+    top: 90px;
 }
 }
 
@@ -198,14 +198,14 @@ section {
 }
 
 .obstacles {
-    width: 160px;
-    height: 40px;
+    width: 320px;
+    height: 160px;
     background-image: url(img/sabre.png);
-    background-size: 50px;
+    background-size: 100px;
     background-repeat: no-repeat;
     position: relative;
-    top: 200px;
-    left: 450px;
+    top: 100px;
+    left: 400px;
     animation: anime-obstacles 2.5s infinite ;
 }
 
@@ -214,7 +214,7 @@ section {
         left:480px;
     }
     100%{
-        left: -40px;
+        left: -100px;
     }
 }
 
