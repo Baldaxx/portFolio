@@ -135,11 +135,21 @@ let ebody = `
 	);
 })
 
+/*
 document.querySelector('.butt').addEventListener('click', function(event) {
     event.preventDefault(); // Empêche le comportement par défaut du lien
     startGame(); // Appel à la fonction startGame() pour réinitialiser le jeu
     return false;
 });
+*/
+
+function startGame() {
+	obstacles.style.animation = "anime-obstacles 2.5s infinite";
+}
+
+function stopGame() {
+	obstacles.style.animation = "none";
+}
 
 var perso = document.querySelector(".perso");
 var obstacles = document.querySelector(".obstacles");
@@ -158,7 +168,7 @@ var verification = setInterval(function() {
     var obstaclesLeft = parseInt(window.getComputedStyle(obstacles).getPropertyValue("left"));
 
     if (obstaclesLeft < 20 && obstaclesLeft > 0 && persoTop >= 90) {
-        obstacles.style.animation = "none";
+        stopGame();
         alert("Vous êtes mort...!")
     }
 }, 1);

@@ -206,7 +206,7 @@ section {
     position: relative;
     top: 100px;
     left: 400px;
-    animation: anime-obstacles 2.5s infinite ;
+    
 }
 
 @keyframes anime-obstacles {
