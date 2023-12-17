@@ -143,12 +143,22 @@ document.querySelector('.butt').addEventListener('click', function(event) {
 });
 */
 
+function startStopClicked() {
+	if(document.getElementById("start_stop_btn").innerHTML == "STOP") {
+		stopGame()
+	} else {
+		startGame()
+	}
+}
+
 function startGame() {
 	obstacles.style.animation = "anime-obstacles 2.5s infinite";
+	document.getElementById("start_stop_btn").innerHTML = "STOP"
 }
 
 function stopGame() {
 	obstacles.style.animation = "none";
+	document.getElementById("start_stop_btn").innerHTML = "START"
 }
 
 var perso = document.querySelector(".perso");
