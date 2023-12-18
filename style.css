@@ -6,6 +6,12 @@
 	font-family: "Inlanders Demo";
 	src: url(Font/Inlanders\ Demo.otf)
 }
+
+@font-face {
+    font-family: minecraft;
+    src: url(FONT/Minecraft.ttf);
+}
+
 .body{
     background: linear-gradient(rgba(0, 255, 157, 0.925), rgb(65, 97, 86));
     background-repeat: no-repeat;
@@ -65,14 +71,15 @@
 .mac {
 font-family: monospace;
 font-family: "Inlanders Demo";
-font-size: 50px;
+font-size: 38px;
 margin-left: 20px;
-padding-top: 20px;
+
 }
 
 .mac span {
 	color: #3C715E;
 	position: relative;
+
 }
 
 .mac span::before {
@@ -243,6 +250,80 @@ section {
 #foot1, #foot2, #foot3 {
 	color: white;
 }
+
+.imageMsg {
+	width:200px;
+	margin-left: 280px;
+	margin-top: 20px;
+}
+
+.countdown{
+    --number-color: hsl(0, 0%, 18%);
+    --text-color: hsl(0, 0%, 15%);
+    --dot-color: hsl(0, 0%, 28%);
+    --dot-color-remaining: #ffffff;
+    --dot-color-active: #15F9A1;
+    font-family: system-ui, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    width: min(50rem, 100%);
+    margin-inline: auto;
+    container: inline-size;
+    > .part {
+      aspect-ratio: 1/1;
+      display: grid;
+      place-items: center;
+      > .remaining {
+        grid-area: 1/1;
+        color: hsl(0 0% 100%);
+        display: grid;
+        text-align: center;
+        font-size: 2.5cqi;
+        >.number {
+          color: var(--number-color);
+        }
+        >.text {
+          color: var(--text-color);
+          text-transform: uppercase;
+          font-size: 0.5em;
+        }
+      }
+      > .dot-container {
+        grid-area: 1/1;
+        height: 100%;
+        width: 3%;
+        rotate: calc(360deg / var(--dots) * var(--dot-idx));
+        > .dot {
+          width: 100%;
+          aspect-ratio: 1/1;
+          background-color: var(--dot-color);
+          border-radius: 50%;
+          transition: background-color .25s;
+          &[data-active=true]{
+            background-color: var(--dot-color-remaining);
+            &[data-lastactive=true]{
+              background-color: var(--dot-color-active);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  h6 {
+    color: hsl(0 0% 100%);
+    >span:last-of-type{
+      color: hsl(0, 0%, 100%)
+    }rgb(82, 82, 82)
+  }
+
+  .texteBeta {
+	font-size: 20px;
+	margin-bottom: 20px;
+  }
+
+
 
 @media screen and (max-width:767px) {
 	.competences {
